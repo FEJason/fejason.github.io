@@ -23,7 +23,7 @@ export default defineConfig({
           { text: 'Vue', link: '/vue/minxin' },
           { text: 'Vue3', link: '/vue3/composables' },
           { text: 'React', link: '/react/react-ts-vite' },
-          { text: '工具', link: '/tools/configure-multiple-ssh-keys' },
+          { text: 'Tools', link: '/tools/configure-multiple-ssh-keys' },
           { text: 'HtmlCss', link: '/htmlcss/flex' },
           { text: 'Nodejs', link: '/nodejs/updated-sitemap' }
         ]
@@ -39,7 +39,8 @@ export default defineConfig({
     sidebar: {
       '/tools/': [
         { text: '配置多个 SSH key', link: '/tools/configure-multiple-ssh-keys' },
-        { text: '将本地代码提交到多个仓库地址', link: '/tools/commit-local-code-to-multiple-repository-addresses' }
+        { text: '将本地代码提交到多个仓库地址', link: '/tools/commit-local-code-to-multiple-repository-addresses' },
+        { text: '部署 VitePress 站点到 GitHub Pages', link: '/tools/github-pages.md'}
       ],
       '/vue/': [
         { text: '混入（minxin）' , link: '/vue/minxin' }
