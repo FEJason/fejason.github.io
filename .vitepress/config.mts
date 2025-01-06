@@ -43,7 +43,8 @@ export default defineConfig({
         { text: '部署 VitePress 站点到 GitHub Pages', link: '/tools/github-pages.md'}
       ],
       '/vue/': [
-        { text: '混入（minxin）' , link: '/vue/minxin' }
+        { text: '混入（minxin）' , link: '/vue/minxin' },
+        { text: '在多个浏览器标签或窗口之间共享某些 vuex mutations' , link: '/vue/vuex-shared-mutations' }
       ],
       '/vue3/': [
         {
@@ -64,6 +65,7 @@ export default defineConfig({
         { text: 'React 中类组件和函数式组件', link: '/react/react-component' },
         { text: 'React 组件通信', link: '/react/component-communication' },
         { text: 'React 引入 CSS 的方式', link: '/react/css-module' },
+        { text: 'setState 执行机制', link: '/react/react-setState' }
       ],
       '/htmlcss/': [
         { text: 'Flex' , link: '/htmlcss/flex' },
