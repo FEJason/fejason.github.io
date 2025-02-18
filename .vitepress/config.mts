@@ -25,7 +25,9 @@ export default defineConfig({
           { text: 'React', link: '/react/react-ts-vite' },
           { text: 'Tools', link: '/tools/configure-multiple-ssh-keys' },
           { text: 'HtmlCss', link: '/htmlcss/flex' },
-          { text: 'Nodejs', link: '/nodejs/updated-sitemap' }
+          { text: 'Nodejs', link: '/nodejs/updated-sitemap' },
+          { text: 'Security', link: '/security/web-security' },
+          { text: 'Flutter', link: '/flutter/01-flutter' },
         ]
       },
       // {
@@ -74,6 +76,19 @@ export default defineConfig({
       '/nodejs/': [
         { text: '删除 sitemap.xml 中状态为非200的URL链接' , link: '/nodejs/updated-sitemap' }
       ],
+      '/security/': [
+        { text: 'Web 常见安全问题' , link: '/security/web-security' },
+        { text: 'Xss 攻击案例' , link: '/security/xss' },
+      ],
+      '/flutter/': [
+        { text: '01-flutter' , link: '/flutter/01-flutter' },
+        { text: '02-flutter-Container、Text' , link: '/flutter/02-flutter-Container、Text' },
+        { text: '03-flutter_图片组件Image、本地图片、远程图片、图片剪切' , link: '/flutter/03-flutter' },
+        { text: '04-flutter Icon图标组件、自带图标和自定义图标' , link: '/flutter/04-flutter' },
+        { text: '05-flutter ListView 列表组件' , link: '/flutter/05-flutter' },
+        { text: '06-flutter-动态列表' , link: '/flutter/06-flutter' },
+        { text: '001-Gex-GetxController' , link: '/flutter/001-Gex-GetxController' },
+      ]
     },
     // 带有图标的社交帐户链接
     socialLinks: [
