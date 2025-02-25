@@ -42,7 +42,8 @@ export default defineConfig({
       '/tools/': [
         { text: '配置多个 SSH key', link: '/tools/configure-multiple-ssh-keys' },
         { text: '将本地代码提交到多个仓库地址', link: '/tools/commit-local-code-to-multiple-repository-addresses' },
-        { text: '部署 VitePress 站点到 GitHub Pages', link: '/tools/github-pages.md'}
+        { text: '部署 VitePress 站点到 GitHub Pages', link: '/tools/github-pages.md'},
+        { text: '阿里云验证码 2.0', link: '/tools/aliyun-captcha.md'}
       ],
       '/vue/': [
         { text: '混入（minxin）' , link: '/vue/minxin' },
