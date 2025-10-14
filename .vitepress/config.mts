@@ -56,6 +56,10 @@ export default defineConfig({
         {
           text: '使用 Husky v9 实现提交前格式化代码',
           link: '/tools/husky-v9.md'
+        },
+        {
+          text: 'Volta 使用手册',
+          link: '/tools/volta.md'
         }
       ],
       '/vue/': [
@@ -92,6 +96,14 @@ export default defineConfig({
         {
           text: '删除 sitemap.xml 中状态为非200的URL链接',
           link: '/nodejs/updated-sitemap'
+        },
+        {
+          text: '将项目国际化配置文件导出成 excel',
+          link: '/nodejs/export-updated-locales'
+        },
+        {
+          text: '根据产品校验过的 excel , 更新项目国际化',
+          link: '/nodejs/update-locales'
         }
       ],
       '/security/': [
