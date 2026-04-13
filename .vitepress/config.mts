@@ -27,7 +27,8 @@ export default defineConfig({
           { text: 'HtmlCss', link: '/htmlcss/flex' },
           { text: 'Nodejs', link: '/nodejs/updated-sitemap' },
           { text: 'Security', link: '/security/web-security' },
-          { text: 'Flutter', link: '/flutter/01-flutter' }
+          { text: 'Flutter', link: '/flutter/01-flutter' },
+          { text: 'Invest', link: '/invest/permanent-combination' },
         ]
       }
       // {
