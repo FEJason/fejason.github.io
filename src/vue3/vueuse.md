@@ -1,4 +1,4 @@
-# VueUse 组合式 API
+# VueUse 可复用的响应式逻辑标准库
 
 > 适用对象：Vue3 开发者（熟悉 Composition API）
 > 前提：项目已安装 `vue@^3.0` 和 `@vueuse/core`
@@ -8,7 +8,9 @@
 
 ## 一、VueUse 是什么
 
-VueUse 本质不是一个简单的工具库，而是：
+VueUse 是一个基于 Vue 3 Composition API 构建的 实用工具函数集合库，旨在帮助开发者更高效、简洁地处理常见的前端逻辑（如响应式状态、浏览器 API、传感器、动画、网络请求等）。
+
+由 Vue/Vite/Nuxt 核心团队成员 Anthony Fu 主导开发，被 Vue 官方文档和 Nuxt 官方推荐。
 
 > 一套“可复用的响应式逻辑标准库”
 
@@ -115,7 +117,7 @@ const toggleDark = useToggle(isDark)
 | API                        | 用途                                    |
 | -------------------------- | ------------------------------------- |
 | `useDebounceFn(fn, delay)` | 防抖：操作后在指定的时间内没有再操作，这一次才被判定有效。（常用于搜索框） |
-| `useThrottleFn(fn, delay)` | 节流：规定时间内，只触发一次。（常用于点击按钮/滚动/resize）    |
+| `useThrottleFn(fn, delay)` | 节流：规定时间内，只触发一次。（常用于抢购按钮/滚动/resize）    |
 | `useRafFn(fn)`             | 基于 requestAnimationFrame 的动画循环        |
 | `computedAsync()`          | 异步 computed（实验性）                      |
 
@@ -134,7 +136,7 @@ const fetchList = async () => {
   await getList({ keyword: keyword.value })
 }
 
-const debounceSearch = useDebounceFn(fetchList, 500)
+const debounceSearch = useDebounceFn(fetchList, 800)
 ```
 
 ```html
@@ -152,7 +154,7 @@ const debounceSearch = useDebounceFn(fetchList, 500)
 
 #### useThrottleFn
 
-节流：规定时间内，只触发一次。（常用于点击按钮/滚动/resize）
+节流：规定时间内，只触发一次。（常用于抢购按钮/滚动/resize）
 
 #### 场景：防重复提交（订单/支付）
 
@@ -416,22 +418,7 @@ const handleScroll = useThrottleFn(() => {
 
 ---
 
-### 4.2 组合使用
-
-```js
-const keyword = ref('')
-
-watch(
-  // useDebounce    是对一个响应式值（ref）进行防抖
-  // useDebounceFn  是对函数进行防抖
-  useDebounce(keyword, 500),
-  fetchList
-)
-```
-
----
-
-### 4.3 避免滥用
+### 4.2 避免滥用
 
 不建议：
 
