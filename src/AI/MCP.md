@@ -98,36 +98,11 @@ MCP Server 常见两种部署方式。
 - 部署复杂度更高
 - 需要处理安全和权限问题
 
-## 5. 部署 MCP Server 的基本步骤
-
-一个 MCP Server 的落地过程，通常是：
-
-1. 先定义能力边界  
-   明确暴露什么能力，哪些只读，哪些高风险。
-
-2. 定义工具接口  
-   名称清晰、参数明确、输入输出结构化。
-
-3. 实现业务逻辑  
-   做好参数校验、权限校验、超时控制和错误处理。
-
-4. 接入客户端  
-   本地模式一般配置启动命令，远程模式一般配置服务地址和认证方式。
-
-5. 增加治理能力  
-   至少补齐日志、审计、限流、敏感数据脱敏。
-
-落地原则很重要：
-
-- 先从只读场景开始
-- 先做高频低风险能力
-- 不要默认开放高权限写操作
-
-## 6. WEB 前端开发中的实际应用
+## 5. WEB 前端开发中的实际应用
 
 MCP 对 Web 前端最有价值的地方，不是“自动写代码”，而是把设计、代码、文档、浏览器和项目系统打通。
 
-### 6.1 设计稿转页面骨架
+### 6.1 设计稿转页面
 
 设计平台 MCP 读取设计稿信息，模型结合项目组件规范生成页面初稿。
 
@@ -179,7 +154,7 @@ MCP 对 Web 前端最有价值的地方，不是“自动写代码”，而是�
 - 分析高概率根因
 - 给出修复建议
 
-## 7. 前端团队推荐的第一批 MCP
+## 6. 前端团队推荐的第一批 MCP
 
 如果是前端团队落地，建议第一阶段先接这几类：
 
@@ -198,7 +173,7 @@ MCP 对 Web 前端最有价值的地方，不是“自动写代码”，而是�
 - 跑回归
 - 查历史修改
 
-## 8. 落地时的注意点
+## 7. 落地时的注意点
 
 最常见的几个误区：
 
@@ -213,7 +188,7 @@ MCP 对 Web 前端最有价值的地方，不是“自动写代码”，而是�
 - 先单点提效，后全链路自动化
 - 把权限和敏感数据控制放在 Server 侧
 
-## 9. 总结
+## 8. 总结
 
 MCP 的本质，是为大模型访问外部能力建立统一接口标准。
 
@@ -227,7 +202,7 @@ MCP 的本质，是为大模型访问外部能力建立统一接口标准。
 
 连接到同一套 AI 工作流里，让模型从“会回答问题”变成“能参与研发交付”。
 
-## 10. 参考资料
+## 9. 参考资料
 
 - MCP 官方首页：[https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)
 - MCP Architecture：[https://modelcontextprotocol.io/docs/learn/architecture](https://modelcontextprotocol.io/docs/learn/architecture)
@@ -235,7 +210,7 @@ MCP 的本质，是为大模型访问外部能力建立统一接口标准。
 - 官方 TypeScript SDK：[https://github.com/modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk)
 - 官方 Servers 仓库：[https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 
-## 11. MCP 项目应用
+## 10. MCP 项目应用
 
 ### 1. 部署 MCP 服务
 
@@ -306,5 +281,3 @@ MCP 能自动下载设计稿中的切图，并生成对应的 UI 代码。
 必要时附上系统界面、流程图或数据截图，让内容更直观、易懂。
 
 能实践的理论才有价值，有例子的分享才真正有用。
-
-最后的最后，每天需要有人在
